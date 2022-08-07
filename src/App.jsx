@@ -62,7 +62,7 @@ console.log(length)
             <div className="text-l md:text-xl">Number</div>
           </div>
         </div>
-        <div className="p-1 flex flex-row gap-10 md:flex flex-row gap-10">
+        <div className="p-1 flex flex-row gap-10 md:flex flex-row gap-9">
           <div className="flex gap-2 w-64 flex-row items-center">
             <input onClick={() => setLowercase(!lowercase)} checked={lowercase} type="checkbox" className="w-6 h-6" />
             <div className="text-l md:text-xl">Lowercase Character</div>
