@@ -32,7 +32,8 @@ console.log(length)
   
   
   return (
-    <div className='bg-stone-900 flex text-slate-100 w-full h-screen md:bg-stone-900 flex justify-center text-slate-100   items-center w-full h-screen'>
+    <div className='items-start  bg-stone-900 flex text-slate-100 w-full h-screen md:bg-stone-900 flex justify-center text-slate-100   items-center w-full h-screen'>
+      <div className="py-4"></div>
       <div className="rounded-md overflow-hidden">
 
         <div className=' md:text-4xl p-2 m-3 font-seimifold border-b border-slate-100 tracking-widest text-slate-100' >PASSWORD GENERATOR</div>
@@ -54,30 +55,30 @@ console.log(length)
         <div className="flex flex-row gap-10">
          <div className="p-1 flex gap-2 w-64 flex-row items-center md:flex gap-2 w-64 flex-row items-center ">
            <input onClick={() => setUppercase(!uppercase)} checked={uppercase} type="checkbox" className="w-6 h-6" />
-            <div className="text-xl">Uppercase Character</div>
+            <div className="text-l md:text-xl">Uppercase Character</div>
           </div>
           <div className="p-1 flex gap-2 flex-row items-center md:flex gap-2 flex-row items-center">
             <input onClick={() => setNumber(!number)} checked={number} type="checkbox" className="w-6 h-6" />
-            <div className="text-xl">Number</div>
+            <div className="text-l md:text-xl">Number</div>
           </div>
         </div>
         <div className="p-1 flex flex-row gap-10 md:flex flex-row gap-10">
           <div className="flex gap-2 w-64 flex-row items-center">
             <input onClick={() => setLowercase(!lowercase)} checked={lowercase} type="checkbox" className="w-6 h-6" />
-            <div className="text-xl">Lowercase Character</div>
+            <div className="text-l md:text-xl">Lowercase Character</div>
           </div>
-          <div className="flex gap-2 flex-row items-center">
+          <div className="p-1 flex gap-2 flex-row  md:flex gap-2 flex-row items-center">
             <input onClick={() => setSymbol(!symbol)} checked={symbol} type="checkbox" className="w-6 h-6" />
-            <div className="text-xl">Symbol</div>
+            <div className="text-l md:text-xl">Symbol</div>
           </div>
         </div>
       </div>
       <div className='text-l p-5 text-center'>
         <div className="flex ">
-          <div className="p-3 text-2xl">password length: </div>
-          <div className="p-2 text-2xl gap-3 font-bold" onClick={() => setLength(length-1)} >-</div>
-          <input value={length} onChange={(e) => setLength(parseInt(e.target.value))} className="w-10  h-13 p-1 focus:outline-none text-slate-900 text-3xl" />
-          <div className="text-xl p-2 font-bold " onClick={() => setLength(length+1)} >+</div>
+          <div className="p-3 text-xl md:p-3 text-2xl">password length: </div>
+          <div className="text-3xl p-4 gap-3 font-bold md:p-2 text-5xl gap-3 font-bold" onClick={() => setLength(length-1)} >-</div>
+          <input value={length} onChange={(e) => setLength(parseInt(e.target.value))} className="w-11 h-14 p-1 focus:outline-none text-slate-900 text-3xl  md:w-10  h-16 p-1 focus:outline-none text-slate-900 text-3xl" />
+          <div className="p-4 text-4xl font-bold md:text-3xl p-3 font-bold " onClick={() => setLength(length+1)} >+</div>
           </div>
         </div>
     </div>
