@@ -77,8 +77,8 @@ console.log(length)
         <div className="flex ">
           <div className="p-3 text-xl md:p-3 text-2xl">password length: </div>
           <div className="text-3xl p-4 gap-3 font-bold md:p-2 text-5xl gap-3 font-bold" onClick={() => setLength(length-1)} >-</div>
-          <input value={length} onChange={(e) => setLength(parseInt(e.target.value))} className="w-11 h-14 p-1 focus:outline-none text-slate-900 text-3xl  md:w-10  h-16 p-1 focus:outline-none text-slate-900 text-3xl" />
-          <div className="p-4 text-4xl font-bold md:text-3xl p-3 font-bold " onClick={() => setLength(length+1)} >+</div>
+          <input value={length} onChange={(e) => setLength(parseInt(e.target.value))} className="w-11 h-14 p-1 focus:outline-none text-slate-900 text-3xl  md:w-10  h-16 focus:outline-none text-slate-900 text-3xl" />
+          <div className="p-4 text-4xl font-bold md:text-3xl p-2 font-bold " onClick={() => setLength(length+1)} >+</div>
           </div>
         </div>
     </div>
