@@ -32,15 +32,18 @@ console.log(length)
   
   
   return (
-    <div className='bg-red-400 flex justify-center items-center w-full h-screen'>
+    <div className='bg-stone-900 flex justify-center text-slate-100   items-center w-full h-screen'>
       <div className="rounded-md overflow-hidden">
 
-        <div className='text-4xl p-2 m-3 font-seimifold border-solid border-2 border-sky-500 tracking-widest' >PASSWORD GENERATOR</div>
+        <div className='text-4xl p-2 m-3 font-seimifold border-b border-slate-100 tracking-widest text-slate-100' >PASSWORD GENERATOR</div>
         <div className='tex`t-s p-1` font-semifold'> a thing to generate password</div>
         <div className='flex flex-row items-center gap-4 border p-5 border-neutral-700 mt-5 '> 
-          <div className='items-center'>{password}</div>
-          <Icon onClick={() => setPassword(generatePassword)} icon="carbon:restart"/>
-          <Icon onClick={() => copy(password)} icon="akar-icons:copy" />
+          <div className='text-2xl items-center'>{password}</div>
+          <button>
+            <Icon onClick={() => setPassword(generatePassword)} icon="carbon:restart" width="25"/></button>
+          <button><Icon className="icon-right"onClick={() => copy(password)} icon="akar-icons:copy" width="25" />
+          </button>          
+          
 
           </div>
           
@@ -69,10 +72,10 @@ console.log(length)
       </div>
       <div className='text-l text-center'>
         <div className="hidden md:flex flex ">
-          <div className="text-2xl">password length: </div>
-          <div className="text-2xl gap-3" onClick={() => setLength(length-1)} >-</div>
-          <input value={length} onChange={(e) => setLength(parseInt(e.target.value))} className="w-10 focus:outline-none" />
-          <div className="text-2xl" onClick={() => setLength(length+1)} >+</div>
+          <div className="p-3 text-2xl">password length: </div>
+          <div className="p-2 text-2xl gap-3" onClick={() => setLength(length-1)} >-</div>
+          <input value={length} onChange={(e) => setLength(parseInt(e.target.value))} className="w-10 focus:outline-none text-slate-900 text-3xl" />
+          <div className="text-2xl p-2" onClick={() => setLength(length+1)} >+</div>
           </div>
         </div>
     </div>
