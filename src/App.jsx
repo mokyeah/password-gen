@@ -50,8 +50,8 @@ console.log(length)
         
           <div className="mt-8 flex flex-col">
         <div className="flex flex-row gap-10">
-          <div className="flex gap-2 w-64 flex-row items-center">
-            <button> <input onClick={() => setUppercase(!uppercase)} checked={uppercase} type="checkbox" className="w-6 h-6" /></button>
+         <div className="flex gap-2 w-64 flex-row items-center">
+           <input onClick={() => setUppercase(!uppercase)} checked={uppercase} type="checkbox" className="w-6 h-6" />
             <div className="text-xl">Uppercase Character</div>
           </div>
           <div className="flex gap-2 flex-row items-center">
@@ -74,7 +74,7 @@ console.log(length)
         <div className="hidden md:flex flex ">
           <div className="p-3 text-2xl">password length: </div>
           <div className="p-2 text-2xl gap-3" onClick={() => setLength(length-1)} >-</div>
-          <input value={length} onChange={(e) => setLength(parseInt(e.target.value))} className="w-10 focus:outline-none text-slate-900 text-3xl" />
+          <input value={length} onChange={(e) => setLength(parseInt(e.target.value))} className="w-8 h-8 p-1 gap-5 focus:outline-none text-slate-900 text-3xl" />
           <div className="text-2xl p-2" onClick={() => setLength(length+1)} >+</div>
           </div>
         </div>
