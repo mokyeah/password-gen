@@ -39,7 +39,7 @@ console.log(length)
 
         <div className=' md:text-4xl p-2 m-3 font-seimifold border-b border-slate-100 tracking-widest text-slate-100 animate__animated animate__lightSpeedInRight' >PASSWORD GENERATOR</div>
        
-        <div className='text-s p-2 font-semifold animate__animated animate__lightSpeedInRight'> a thing to generate password</div>
+        <div className='text-s p-2 font-semifold animate__animated animate__lightSpeedInRight'> A thing to generate password</div>
         <div className='flex flex-row items-center gap-4 border p-5 border-neutral-700 mt-5 animate__animated animate__bounceInLeft'>
            
           <div className='text-2xl items-center animate__animated animate__bounceInLeft'>{password}</div>
