@@ -41,17 +41,17 @@ console.log(length)
           <div className='text-2xl items-center'>{password}</div>
           <button>
             <Icon onClick={() => setPassword(generatePassword)} icon="carbon:restart" width="25"/></button>
-          <button><Icon className="icon-right"onClick={() => copy(password)} icon="akar-icons:copy" width="25" />
+          <button><Icon onClick={() => copy(password)} icon="akar-icons:copy" width="25" />
           </button>          
           
 
           </div>
           
-      
+        
           <div className="mt-8 flex flex-col">
         <div className="flex flex-row gap-10">
           <div className="flex gap-2 w-64 flex-row items-center">
-            <input onClick={() => setUppercase(!uppercase)} checked={uppercase} type="checkbox" className="w-6 h-6" />
+            <button> <input onClick={() => setUppercase(!uppercase)} checked={uppercase} type="checkbox" className="w-6 h-6" /></button>
             <div className="text-xl">Uppercase Character</div>
           </div>
           <div className="flex gap-2 flex-row items-center">
@@ -70,7 +70,7 @@ console.log(length)
           </div>
         </div>
       </div>
-      <div className='text-l text-center'>
+      <div className='text-l p-5 text-center'>
         <div className="hidden md:flex flex ">
           <div className="p-3 text-2xl">password length: </div>
           <div className="p-2 text-2xl gap-3" onClick={() => setLength(length-1)} >-</div>
